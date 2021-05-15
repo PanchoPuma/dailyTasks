@@ -36,7 +36,7 @@ var saveEventDetails = function() {
         //use this and sibilings and alert($('textarea.fckEditor').attr('id'));
         var details = $("#eventDetails1").val();
 console.log (details);
-localStorage.setItem ("Details", JSON.stringify(details));
+localStorage.setItem ("Time", JSON.stringify(details));
 }
 
 saveEventDetails();

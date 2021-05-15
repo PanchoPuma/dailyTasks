@@ -32,7 +32,9 @@ hourHighlight ();
 
 var saveEventDetails = function() {
     //$(".btn").on("click", function () {
-        var details = $("#eventDetails1").val();//use this and sibilings
+        //get two values the time and the text 
+        //use this and sibilings and alert($('textarea.fckEditor').attr('id'));
+        var details = $("#eventDetails1").val();
 console.log (details);
 localStorage.setItem ("Details", JSON.stringify(details));
 }

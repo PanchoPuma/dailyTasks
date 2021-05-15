@@ -27,14 +27,21 @@ var hourHighlight = function () {
 hourHighlight ();
 
 // saving text area
+//create a function and whithin that function use jquery to 
+///determine when the button is clovked that you save the sibiling text are event details or description
 
-var details = $("#eventDetails1").val();
+var saveEventDetails = function() {
+    //$(".btn").on("click", function () {
+        var details = $("#eventDetails1").val();//use this and sibilings
 console.log (details);
+localStorage.setItem ("Details", JSON.stringify(details));
+}
 
-    // //var saveEventDetails = function() {
-    //     localStorage.setItem("EventDetails", JSON.stringify(details));
-    //   };
+saveEventDetails();
     
+
+
+
 // load existing values 
 
     // //var loadEventDetails = function() {

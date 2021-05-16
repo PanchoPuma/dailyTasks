@@ -26,17 +26,15 @@ var hourHighlight = function () {
 
 hourHighlight ();
 
-// saving text area
-//create a function and whithin that function use jquery to 
-///determine when the button is clovked that you save the sibiling text are event details or description
-
 var saveEventDetails = function() {
-    //$(".btn").on("click", function () {
-        //get two values the time and the text 
-        //use this and sibilings and alert($('textarea.fckEditor').attr('id'));
-        var details = $("#eventDetails1").val();
-console.log (details);
-localStorage.setItem ("Time", JSON.stringify(details));
+    $(".btn").on("click", function () {
+        var time = $(this).siblings(".hour").text(); 
+        var details = $(this).siblings(".description").val()
+        console.log (details);
+        console.log (time);
+        //debugger;
+        localStorage.setItem (JSON.stringify(time), JSON.stringify(details));
+    })
 }
 
 saveEventDetails();

@@ -9,7 +9,7 @@ var hourHighlight = function () {
     //console.log (currentTimeBrowser);
 
     $(".time-block").each(function () {
-        var scheduleHour = parseInt($(this).attr("id").split("hour")[0]);
+        var scheduleHour = parseInt($(this).attr("id"));
     //console.log (scheduleHour);
 
     if (currentTimeBrowser === scheduleHour) {
